@@ -1,0 +1,22 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block divs %}
+{% if user.is_authenticated %}
+<h1>Hello, {{user.username}}</h1>
+<h2>Enter your meter readings and your tariff please:</h2>
+<form action="{% url 'result' %}" method="post">
+    {{ form.as_p }}
+{% csrf_token %}
+    <div id="result"></div>
+    <button id="calculate-btn">Exit</button>
+    </form>
+{% else %}
+    <h1>Sorry, but you`re not authenticated.</h1>
+    <h2> <a href="{% url 'login' %}">Sign In</a> </h2>1
+{% endif %}
+{% endblock %}
+{% block scripts %}
+    <script src="{% static 'js/calculate.js' %}"></script>
+
+{% endblock %}

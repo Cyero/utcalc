@@ -1,0 +1,13 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block divs %}
+    <h1> Welcome to Utility calculator</h1>
+    <img src="{% static 'img\logo.png' %}" class = "center">
+    <div>
+      <h2>
+          <a href="{% url 'login' %}">Login</a>
+          <a href="{% url 'signup' %}">Sign Up</a>
+      </h2>
+    </div>
+
+{% endblock %}

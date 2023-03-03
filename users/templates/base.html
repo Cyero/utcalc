@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en-us">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Utility Calculator</title>
+    <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap"
+      rel="stylesheet"    />
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="{% static 'css\base.css' %}">
+  </head>
+  <body>
+  {% csrf_token %}
+    <div class="container">
+      {% block divs %}
+      {% endblock %}
+    </div>
+    <!-- Script -->
+    {% block scripts %}
+    {% endblock %}
+  </body>
+</html>

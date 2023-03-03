@@ -1,0 +1,13 @@
+{% extends 'base.html' %}
+
+{% block divs %}
+<h2>Register new user</h2>
+
+<form method="post">
+    {% csrf_token %}
+    {{form}}
+    <button id="submit"> Register </button>
+</form>
+<h5>Already have account? <a href="{% url 'login' %}">Sign In</a></h5>
+
+{% endblock %}

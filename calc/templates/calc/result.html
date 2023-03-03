@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block divs %}
+{% csrf_token %}
+{% if user.is_authenticated %}
+      <h1>Thank you for using our calculator.</h1>
+      <h2> <a href="{% url 'calc' %}">Start again</a> </h2>
+      <h2> <a href="{% url 'logout' %}">Exit</a> </h2>
+{% else %}
+    <h1>Sorry, but you`re not authenticated.</h1>
+    <h2> <a href="{% url 'login' %}">Sign In</a> </h2>
+{% endif %}
+{% endblock %}
+

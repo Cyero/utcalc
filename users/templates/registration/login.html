@@ -1,0 +1,16 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block divs %}
+<h2>User authentication</h2>
+    <form method="post">
+      {% csrf_token %}
+      <table>
+        {{ form.as_p }}
+        <tr>
+          <td>&nbsp;</td>
+          <button id='login'>Login</button>
+        </tr>
+      </table>
+    </form>
+<h5>Don`t have account? <a href="{% url 'signup' %}">Sign Up</a></h5>
+{% endblock %}
