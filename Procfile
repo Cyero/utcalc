@@ -1,1 +1,1 @@
-web: python3 manage.py makemigrations && python3 manage.py migrate && gunicorn 'utilitycalc.wsgi'
+web: python3 manage.py collectstatic --noinput && python3 manage.py makemigrations && python3 manage.py migrate && gunicorn 'utilitycalc.wsgi'
