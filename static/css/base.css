@@ -1,0 +1,126 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+body {
+  height: 110vh;
+  background: linear-gradient(#01e26e, #72ffb4);
+}
+.container {
+  background-color: #ffffff;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  top: 50%;
+  left: 50%;
+  width: 80vw;
+  max-width: 600px;
+  min-width: 350px;
+  padding: 60px 30px;
+  border-radius: 10px;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
+}
+label {
+    text-align: center;
+    display: inline-grid;
+    font-size: 19px;
+    margin-bottom: 10px;
+    font-weight: 500;
+    width: 35%;}
+input {
+  text-align: center;
+  margin-bottom: 20px;
+  border: none;
+  font-size: 20px;
+  border-bottom: 2px solid #585858;
+  color: #585858;
+  padding: 2px 15px;
+}
+input:focus {
+  outline: none;
+  border-bottom: 2.4px solid #01e26e;
+}
+.input-wrapper {
+  text-align: center;
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  gap: 20px;
+}
+.input-wrapper input {
+  width: 100%;
+  text-align: center;
+}
+input#id_username {
+    text-align: center;
+    width: 100%;
+}
+input#id_password {
+    text-align: center;
+    width: 100%;
+}
+input#id_password1 {
+    text-align: center;
+    width: 100%;
+}
+input#id_password2 {
+    text-align: center;
+    width: 100%;
+}
+.tariff-wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+.tariff-wrapper input {
+  width: 30%;
+  text-align: center;
+}
+select {
+  width: 35%;
+  border: 1px solid #585858;
+  font-size: 20px;
+  margin-left: 3%;
+  padding: 8px 0;
+  border-radius: 5px;
+}
+button {
+  display: flex;
+  background-color: #01e26e;
+  border: none;
+  color: #ffffff;
+  margin: 20px auto 0 auto;
+  padding: 15px 40px;
+  font-size: 20px;
+  border-radius: 5px;
+}
+#result {
+  background-color: #c6ffe2;
+  margin-top: 30px;
+  color: #585858;
+  text-align: center;
+  font-size: 18px;
+  padding: 20px;
+  border-radius: 5px;
+}
+#result div {
+  margin-bottom: 10px;
+}
+#result span {
+  color: #000000;
+  font-weight: 500;
+}
+h1, h2, h5 {
+text-align: center;
+}
+p{
+  text-align: center;
+  display: block;
+}
+span.helptext {
+    font-size: 13px;
+}
+img.center {
+    display: block;
+    margin: auto;
+}
